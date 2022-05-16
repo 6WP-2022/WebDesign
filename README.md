@@ -1,2 +1,2 @@
-# WebApplication
-Webアプリケーションの作成
+# WebDesign
+Webデザインの作成
