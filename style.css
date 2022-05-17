@@ -1,0 +1,211 @@
+*{
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Arial", "Meiryo",sans-serif;
+}
+
+body{
+    position: relative;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);    
+}
+
+.active{
+    padding-top: 140px;
+    text-align:center;
+    font-family:verdana;
+    font-weight:100;
+}
+
+.movic{
+    margin-top: 100px;
+}
+
+.motiv{
+    text-align:center;
+    margin:180px 0 20px;
+    font-weight:100;
+}
+
+.omake{
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.trans{
+    position: absolute;
+    left: 10%;
+    right: 0;
+    top: -20px;
+    bottom: 0;
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.max{
+    position: absolute;
+    left: 290px;
+    right: 0;
+    top: -125px;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+.max2{
+    position: absolute;
+    left: 290px;
+    right: 0;
+    top: 145px;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+.min{
+    position: absolute;
+    left: 0;
+    right: 190px;
+    top: -125px;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+.min2{
+    position: absolute;
+    left: 0;
+    right: 190px;
+    top: 145px;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.emotion{
+    position: absolute;
+    left: 35%;
+    right: 0;
+    top: -130px;
+    bottom: 0;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.move{
+    position: absolute;
+    left: 35%;
+    right: 0;
+    top: 145px;
+    bottom: 0;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.p_{
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+#radios{
+  left: 0;
+  right: 0;
+  top: -100px;
+  bottom: 0;
+  margin: auto;
+  position:absolute;
+  min-width: 250px;
+  max-width: 300px;
+  width:25%;
+  
+  display:inline-block;
+}
+
+#radios2{
+  left: 0;
+  right: 0;
+  top: 170px;
+  bottom: 0;
+  margin: auto;
+  position:absolute;
+  min-width: 250px;
+  max-width: 300px;
+  width:25%;
+}
+
+input[type="radio2"]{
+    position:absolute;
+    right:1000%;
+}
+
+input[type="radio"]{
+  position:absolute;
+  right:1000%;
+}
+
+label{
+  float:left;
+  width:15%; padding-bottom:15%;
+  margin:0 2.5%;
+  background:rgba(255, 158, 1, 0.633);
+  border-radius:50%;
+  cursor:pointer;
+}
+
+#slider{
+  position:absolute;
+  left:0%; top:0;
+  width:10%; padding-bottom:10%;
+  margin:2.5% 0 0 5%;
+  background:#fff;
+  transition:transform 1s;
+  border-radius:50%;
+  animation-timing-function: ease-in-out;
+  animation-duration:.3s;
+  animation-fill-mode: forwards;
+  transition: 0.2s left .05s ease-in-out;
+}
+
+#slider2{
+    position:absolute;
+    left:0%; top:0;
+    width:10%; padding-bottom:10%;
+    margin:2.5% 0 0 5%;
+    background:#fff;
+    transition:transform 1s;
+    border-radius:50%;
+    animation-timing-function: ease-in-out;
+    animation-duration:.3s;
+    animation-fill-mode: forwards;
+    transition: 0.2s left .05s ease-in-out;
+}
+
+#input1_2:checked  ~ #slider2{ animation-name: input1_2; left:0; }
+#input2_2:checked  ~ #slider2{ animation-name: input2_2; left:20%; }
+#input3_2:checked  ~ #slider2{ animation-name: input3_2; left:40%; }
+#input4_2:checked  ~ #slider2{ animation-name: input4_2; left:60%; }
+#input5_2:checked  ~ #slider2{ animation-name: input5_2; left:80%; }
+
+#input1:checked  ~ #slider{ animation-name: input1; left:0; }
+#input2:checked  ~ #slider{ animation-name: input2; left:20%; }
+#input3:checked  ~ #slider{ animation-name: input3; left:40%; }
+#input4:checked  ~ #slider{ animation-name: input4; left:60%; }
+#input5:checked  ~ #slider{ animation-name: input5; left:80%; }
+
+@keyframes input1{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input2{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input3{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input4{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input5{ 30%, 70% { transform:scale(0.5); } }
+
+@keyframes input1_2{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input2_2{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input3_2{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input4_2{ 30%, 70% { transform:scale(0.5); } }
+@keyframes input5_2{ 30%, 70% { transform:scale(0.5); } }
